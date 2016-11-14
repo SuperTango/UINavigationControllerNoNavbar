@@ -12,12 +12,10 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        NSLog("view2 viewDidLoad")
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        NSLog("view2 viewWillAppear")
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
