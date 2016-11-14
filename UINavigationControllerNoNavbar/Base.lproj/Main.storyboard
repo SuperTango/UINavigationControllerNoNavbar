@@ -49,12 +49,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <outlet property="delegate" destination="Anj-ns-E2a" id="2FV-7v-5VQ"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XBS-Ml-xrM"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lHI-xg-8m3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="Anj-ns-E2a" customClass="JamNavigationControllerDelegate" customModule="UINavigationControllerNoNavbar" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="-1081" y="126"/>
         </scene>

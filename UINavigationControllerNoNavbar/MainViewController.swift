@@ -28,6 +28,9 @@ class MainViewController: UIViewController {
         let navViewController = storyboard.instantiateViewController(withIdentifier: "TopNav") as! UINavigationController
         let view3ViewController = storyboard.instantiateViewController(withIdentifier: "View3ViewController") as! View3ViewController
         navViewController.pushViewController(view3ViewController, animated: false)
+        let delegate = JamNavigationControllerDelegate()
+        NSLog(String(describing: delegate))
+        navViewController.delegate = delegate
         navViewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
         self.present(navViewController, animated: true, completion: nil)
 
