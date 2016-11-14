@@ -33,12 +33,6 @@ class View3ViewController: UIViewController {
     */
 
     @IBAction func backTo1Tapped(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let vc = storyboard.instantiateViewController(withIdentifier: "View1ViewController") as? View1ViewController {
-            //            vc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-            self.present(vc, animated: true) {
-            }
-        }
-
+        self.navigationController!.popToRootViewController(animated: true)
     }
 }

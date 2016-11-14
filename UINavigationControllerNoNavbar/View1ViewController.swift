@@ -20,6 +20,10 @@ class View1ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
     
 
     /*
@@ -34,10 +38,9 @@ class View1ViewController: UIViewController {
 
     @IBAction func gotTo2Tapped(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let vc = storyboard.instantiateViewController(withIdentifier: "View2ViewController") as? View2ViewController {
-            vc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-            self.present(vc, animated: true) {
-            }
-        }
+        let vc = storyboard.instantiateViewController(withIdentifier: "View2ViewController") as! View2ViewController
+        vc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        self.navigationController!.pushViewController(vc, animated: true, completion: { () in
+        })
     }
 }
